@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a3d17d4d-638f-4f2f-a405-f08591b1e08b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/practice/st_practice/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/st_practice/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/st_practice/base/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/st_practice/base/base_data_loader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/st_practice/base/base_model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/st_practice/base/base_trainer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/st_practice/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/st_practice/confirm_button_hack.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/st_practice/model/model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/st_practice/pipeline_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/st_practice/predict.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/st_practice/utils.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="22LolMAuJXT6BsYCNtnBV17xiQK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="PLAIN_TEXT" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/practice/sp_mission_02/app" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/practice/sp_mission_02/app" />
+      <recent name="$PROJECT_DIR$/practice/sp_mission_02" />
+      <recent name="$PROJECT_DIR$/practice/fastapi/app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/practice/sp_mission_02/app/model" />
+      <recent name="$PROJECT_DIR$/practice/sp_mission_02/app" />
+      <recent name="$PROJECT_DIR$/practice/sp_mission_02/app/load_data" />
+      <recent name="$PROJECT_DIR$/practice/sp_mission_02/app/predict" />
+      <recent name="$PROJECT_DIR$/practice/sp_mission_02/back-end" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="01_simple_webserver" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Product-Serving" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practice/fastapi" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice/fastapi/01_simple_webserver.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.01_simple_webserver" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a3d17d4d-638f-4f2f-a405-f08591b1e08b" name="Changes" comment="" />
+      <created>1639626380075</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1639626380075</updated>
+      <workItem from="1639626384566" duration="642000" />
+      <workItem from="1639627778686" duration="22695000" />
+      <workItem from="1639711386506" duration="2056000" />
+      <workItem from="1639713702298" duration="905000" />
+    </task>
+    <task id="LOCAL-00001" summary="Update">
+      <created>1639628300120</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1639628300120</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update">
+      <created>1639628337816</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1639628337816</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update: prototype version 0.1&#10;&#10;frontend=streamlit&#10;backend=fastapi">
+      <created>1639710506154</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1639710506154</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update: poetry">
+      <created>1639710526467</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1639710526467</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update" />
+    <MESSAGE value="Update: prototype version 0.1&#10;&#10;frontend=streamlit&#10;backend=fastapi" />
+    <MESSAGE value="Update: poetry" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update: poetry" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Product_Serving$01_simple_webserver.coverage" NAME="01_simple_webserver Coverage Results" MODIFIED="1639627799938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practice/fastapi" />
+  </component>
+</project>
