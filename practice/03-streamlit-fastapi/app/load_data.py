@@ -1,13 +1,18 @@
 from pandas import read_csv
+from datasets import load_dataset
+
 
 DATA_PATH = 'AI-it/korean-hate-speech'
 DATA_FILES = {
-    "train_comments": "train_hate.csv",
-    "train_titles": "train_news_title.txt"
+    "data": "unlabeled_data.csv"
 }
 
+def load_data():
+    dataset = load_dataset(DATA_PATH, data_files=DATA_FILES, use_auth_token=True)
+    return dataset
+    
 
-def retrieve_comments(keyword: str) -> list:
+def retrieve_comments(keyword: str, dataset) -> list:
     """Retrieve comments correspond to keyword from unlabeled comments.txt
 
     Parameters
@@ -19,8 +24,7 @@ def retrieve_comments(keyword: str) -> list:
     list of unlabeled comments contain keyword
     """
     result = []
-    df_comments = read_csv('data/unlabeled/unlabeled_comments.txt', header=None, encoding='utf-8')
-    for comment in df_comments[0]:
+    for comment in dataset['data']['comment']:
         if type(comment) != str:
             continue
         elif keyword in comment:
@@ -32,4 +36,6 @@ def retrieve_comments(keyword: str) -> list:
 
 
 if __name__ == '__main__':
-    retrieve_comments('전현무')
+    result = retrieve_comments('전현무')
+    
+    
