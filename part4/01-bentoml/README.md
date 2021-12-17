@@ -12,5 +12,5 @@ $ pip install -r requirements.txt
 ## Frontend + Backend
 ```shell
 bentoml serve MaskAPIService:latest
-python -m streamlit run app/frontend.py
+python -m 01-streamlit run app/frontend.py
 ```

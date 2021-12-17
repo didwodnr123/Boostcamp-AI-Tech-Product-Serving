@@ -48,7 +48,7 @@ FastAPI을 이용한 모델 온라인 서빙
         ``` 
    3. 애플리케이션을 실행합니다
       ```shell
-      > cd $part3/01-fastapi
+      > cd $part3/01-02-fastapi
       > python -m app
        INFO:     Started server process [11467]
        INFO:     Waiting for application startup.
