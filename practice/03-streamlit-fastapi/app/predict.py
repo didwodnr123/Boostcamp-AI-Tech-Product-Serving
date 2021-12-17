@@ -9,7 +9,7 @@ def get_pipeline():
     device: int = 0 if torch.cuda.is_available() else -1
 
     model_path: str = '/Users/yangjaeug/Desktop/GitHub/Product-Serving/assets/comments_task/model.pt'
-    config_path: str = '/practice/01-streamlit/config.json'
+    config_path: str = '/Users/yangjaeug/Desktop/GitHub/Product-Serving/practice/03-streamlit-fastapi/app/config.json'
 
     model = torch.load(model_path, map_location=torch.device('cpu'))
     model_config = read_json(config_path)
