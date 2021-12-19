@@ -27,8 +27,7 @@ def inference(keyword):
             results.append(
                 {
                     'comment': comment,
-                    'label': output[0]['label'],
-                    'score': output[0]['score']
+                    'label': output[0]['label']
                 }
             )
     
