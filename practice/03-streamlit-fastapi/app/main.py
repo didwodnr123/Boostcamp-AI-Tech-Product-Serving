@@ -1,38 +1,31 @@
 from fastapi import FastAPI
 import uvicorn
-from predict import get_pipeline
-from load_data import *
+from predict import get_pipeline, inference
+from database import run_db, insert2db
+from load_data import load_data, retrieve_comments
+from utils import make_samples
+
 
 app = FastAPI()
 pipe = get_pipeline()
 dataset = load_data()
+
+evidence = run_db()
 
 @app.get('/')
 def hello_world():
     return {'hello': 'world'}
 
 
-@app.get('/inference/{keyword}')
-def inference(keyword):
-    results = []
+@app.get('/get_sample/{keyword}')
+def get_sample(keyword):
     comments = retrieve_comments(keyword, dataset)
-    
-    for comment in comments[:10]:
-        output = pipe(comment)
-    
-        if output[0]['label'] == 'none':
-            continue
-    
-        else:
-            results.append(
-                {
-                    'comment': comment,
-                    'label': output[0]['label']
-                }
-            )
-    
-    return results
+    results = inference(comments[:10], pipe)
+    if results:
+        insert2db(keyword, results, evidence)
+
+    return make_samples(results)
 
 
 if __name__ == '__main__':
-    uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run('main:app', host="0.0.0.0", port=8000, reload=True)

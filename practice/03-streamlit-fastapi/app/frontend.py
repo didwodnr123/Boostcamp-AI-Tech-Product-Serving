@@ -12,16 +12,10 @@ st.title('Malicious Comments Collecting Service')
 
 
 def main():
-    # my_bar = st.progress(0)
-    # for percent_complete in range(100):
-    #     time.sleep(0.05)
-    #     my_bar.progress(percent_complete + 1)
-
     keyword = st.text_input('Keyword you want to collect!!')
     if keyword:
-        # st.write('Classifying...')
         with st.spinner('Collecting Evidence...'):
-            response = requests.get('http://localhost:8000/inference/' + keyword)
+            response = requests.get('http://localhost:8000/get_sample/' + keyword)
         st.success('Done!')
         
         st.markdown("<h2 style='text-align: center'>Report</h1>", unsafe_allow_html=True)

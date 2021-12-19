@@ -27,10 +27,15 @@ def retrieve_comments(keyword: str, dataset) -> list:
     for comment in dataset['data']['comment']:
         if type(comment) != str:
             continue
-        elif keyword in comment:
-            result.append(comment)
-        elif keyword[1:] in comment:
-            result.append(comment)
+        if len(keyword) == 3:
+            '''3글자 이름이 들어왔을경우, e.g. 손흥민, 흥민 둘 다 검사'''
+            if keyword in comment:
+                result.append(comment)
+            elif keyword[1:] in comment:
+                result.append(comment)
+        else:
+            if keyword in comment:
+                result.append(comment)
 
     return result
 

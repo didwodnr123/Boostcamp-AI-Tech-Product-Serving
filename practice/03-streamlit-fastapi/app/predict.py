@@ -1,4 +1,4 @@
-from transformers import pipeline, AutoTokenizer
+from transformers import AutoTokenizer, pipeline
 import torch
 # import 01-streamlit as st
 from utils import read_json
@@ -25,3 +25,26 @@ def get_pipeline():
     )
     
     return pipe
+
+def inference(comments, pipe):
+    results = []
+    
+    for comment in comments:
+        try:
+            output = pipe(comment)
+        except:
+            continue
+    
+        if output[0]['label'] == 'none':
+            continue
+    
+        else:
+            results.append(
+                {
+                    'comment': comment,
+                    'label': output[0]['label'],
+                    'score': output[0]['score']
+                }
+            )
+    
+    return results
