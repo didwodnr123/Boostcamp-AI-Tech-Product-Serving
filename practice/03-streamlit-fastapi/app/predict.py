@@ -26,12 +26,12 @@ def get_pipeline():
     
     return pipe
 
-def inference(comments, pipe):
+def inference(data, pipe):
     results = []
     
-    for comment in comments:
+    for d in data:
         try:
-            output = pipe(comment)
+            output = pipe(d['comment'])
         except:
             continue
     
@@ -41,9 +41,13 @@ def inference(comments, pipe):
         else:
             results.append(
                 {
-                    'comment': comment,
+                    'user_id': d['user_id'],
+                    'comment': d['comment'],
                     'label': output[0]['label'],
-                    'score': output[0]['score']
+                    'score': output[0]['score'],
+                    'site_name': d['site_name'],
+                    'site_url': d['site_url'],
+                    'commented_at': d['commented_at']
                 }
             )
     

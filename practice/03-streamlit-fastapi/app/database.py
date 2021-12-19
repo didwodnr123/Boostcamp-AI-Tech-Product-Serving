@@ -13,8 +13,12 @@ def insert2db(keyword, results, collection):
     for res in results:
             docs.append({
                 "keyword": keyword,
-                "comment": res['comment'],
+                'user_id': res['user_id'],
+                'comment': res['comment'],
                 "label": res['label'],
-                "score": res['score']
+                "score": res['score'],
+                'site_name': res['site_name'],
+                'site_url': res['site_url'],
+                'commented_at': res['commented_at']
             })
     collection.insert_many(docs)

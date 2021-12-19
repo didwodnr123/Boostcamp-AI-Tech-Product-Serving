@@ -19,8 +19,8 @@ def hello_world():
 
 @app.get('/get_sample/{keyword}')
 def get_sample(keyword):
-    comments = retrieve_comments(keyword, dataset)
-    results = inference(comments[:10], pipe)
+    data = retrieve_comments(keyword, dataset)
+    results = inference(data[:10], pipe)
     if results:
         insert2db(keyword, results, evidence)
 
