@@ -147,3 +147,5 @@ cython_debug/
 assets/
 data
 .idea
+*.pt
+*.pkl
