@@ -12,6 +12,7 @@ st.title('Malicious Comments Collecting Service')
 
 
 def main():
+    st.write('hello')
     keyword = st.text_input('Keyword you want to collect!!')
     if keyword:
         with st.spinner('Collecting Evidence...'):
